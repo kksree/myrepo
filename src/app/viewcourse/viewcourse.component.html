@@ -1,0 +1,28 @@
+<p *ngIf="!status else display">Fetching...</p>
+<div class="container">
+    <div class="row">
+
+        <ng-template #display>
+        <table >  
+
+            <tr>
+
+                <th>Title</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Venue</th>
+                <th>Date</th>
+            </tr>
+            <tr *ngFor="let data of result">
+
+                <td>{{data.courseTitle}}</td>
+                <td>{{data.courseDescription}}</td>
+                <td>{{data.courseDuration}}</td>
+                <td>{{data.courseVenue}}</td>
+                <td>{{data.courseDate}}</td>
+            </tr>
+
+        </table>
+    </ng-template>
+    </div>
+</div>

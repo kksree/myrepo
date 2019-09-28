@@ -1,0 +1,62 @@
+
+<div>
+    <form (ngSubmit)="read(mydata)" #mydata="ngForm">
+        <table style="margin-top: 20px" align="center">
+            <tr>
+                <td>
+                    <b>Course Title</b>
+                </td>
+                <td>
+                    <input type="text" class="form-control mr-sm-2 " id="title" name="courseTitle" ngModel>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Course Description</b>
+                </td>
+                <td>
+                    <input type="text" class="form-control mr-sm-2" id="desc" name="courseDescription" ngModel>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Course Duratrion</b>
+                </td>
+                <td>
+                    <input type="text" class="form-control mr-sm-2" id="duration" name="courseDuration" ngModel>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Venue</b>
+                </td>
+                <td>
+                    <input type="text" class="form-control mr-sm-2" id="venue" name="courseVenue" ngModel>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Date</b>
+                </td>
+                <td>
+                    <input type="date" class="form-control mr-sm-2" id="date" name="courseDate" ngModel>
+                </td>
+
+            </tr>
+
+        </table>
+        <div align="center" style="padding-top:30px">
+            <tr>
+                <td align="center">
+                    <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+                </td>
+
+
+            </tr>
+        </div>
+    </form>
+</div>
